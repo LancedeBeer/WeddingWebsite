@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Thirteen images without spacing, shadows, or borders -->
+        <div class="image" id="image1"><img src="WeddingImages/1.png" alt=""></div>
+        <div class="image" id="image2"><img src="WeddingImages/2.png" alt=""></div>
+        <div class="image" id="image3"><img src="WeddingImages/3.png" alt=""></div>
+        <div class="image" id="image4">
+            <!-- Countdown Timer -->
+            <img src="WeddingImages/4.png" alt="">
+            <div class="countdown" id="countdown"></div>
+        </div>
+        <div class="image" id="image5"><img src="WeddingImages/5.png" alt=""></div>
+        <div class="image" id="image6"><img src="WeddingImages/6.png" alt=""></div>
+        <div class="image" id="image7"><img src="WeddingImages/7.png" alt=""></div>
+        <div class="image" id="image8"><img src="WeddingImages/8.png" alt=""></div>
+        <div class="image" id="image9"><img src="WeddingImages/9.png" alt=""></div>
+        <div class="image" id="image10"><img src="WeddingImages/10.png" alt=""></div>
+        <div class="image" id="image11"><img src="WeddingImages/Timeline.png" alt=""></div>
+        <div class="image" id="image12">
+            <img src="WeddingImages/11.png" alt="">
+            <!-- Dynamic Links -->
+            <div class="dynamic-links">
+                <a href="https://example.com/1" target="_blank"><img src="WeddingImages/Logo/AmberGrace.png" alt="Link 1"></a>
+                <a href="https://example.com/2" target="_blank"><img src="WeddingImages/Logo/Guesthouse@56.png" alt="Link 2"></a>
+                <a href="https://example.com/3" target="_blank"><img src="WeddingImages/Logo/SilverFig.png" alt="Link 3"></a>
+            </div>
+        </div>
+        <div class="image" id="image13">
+            <img src="WeddingImages/12.png" alt="">
+            <!-- RSVP Section -->
+            <p class="rsvp">Are you coming to the wedding?</p>
+            <button onclick="handleRSVP('yes')">Yes</button>
+            <button onclick="handleRSVP('no')">No</button>
+        </div>
+    </div>
+
+    <!-- Pop-Up Forms -->
+    <div class="popup" id="noPopup">
+        <p>Please enter your name:</p>
+        <input type="text" id="noName">
+        <button onclick="submitNo()">Submit</button>
+    </div>
+    <div class="popup" id="yesPopup">
+        <form id="yesForm">
+            <label>Name: <input type="text" required></label>
+            <label>Starter:
+                <select required>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                </select>
+            </label>
+            <label>Main:
+                <select required>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                </select>
+            </label>
+            <label>Dessert:
+                <select required>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 4">Option 4</option>
+                </select>
+            </label>
+            <label>Song Recommendation:
+                <input type="text" placeholder="Song Title & Artist">
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
